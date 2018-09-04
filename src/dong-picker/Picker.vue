@@ -29,7 +29,7 @@ import antPopup from '../popup/popup.vue'
 import BasePicker from './BasePicker'
 
 export default {
-  name: 'mfw-picker',
+  name: 'dong-picker',
   props: {
     cascade: {
       type: Boolean,

@@ -17,7 +17,7 @@ const { TouchInertial } = transition
 const InertialMotion = TouchInertial
 
 export default {
-  name: 'mfw-base-picker',
+  name: 'dong-base-picker',
   props: {
     index: {
       type: Number,

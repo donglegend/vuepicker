@@ -15,28 +15,28 @@
       </li>
     </ul>
 
-    <mfw-picker :visible="showPicker" v-on:hide="onHide" :indexs="pickerIndex" :data="pickerContent" @change="pickChange">
+    <dong-picker :visible="showPicker" v-on:hide="onHide" :indexs="pickerIndex" :data="pickerContent" @change="pickChange">
       <template slot-scope="props">
         <span class="itemfz">{{props.item.name}}</span>
       </template>
-    </mfw-picker>
+    </dong-picker>
 
-    <mfw-picker :visible="showPicker2" v-on:hide="showPicker2 = false" :indexs="pickerIndex2" :data="pickerContent2" @change="pickChange2">
+    <dong-picker :visible="showPicker2" v-on:hide="showPicker2 = false" :indexs="pickerIndex2" :data="pickerContent2" @change="pickChange2">
       <template slot-scope="props">
         <span class="itemfz">{{props.item.name}}</span>
       </template>
-    </mfw-picker>
+    </dong-picker>
 
-    <mfw-picker :visible="showPicker3" v-on:hide="showPicker3 = false" :indexs="pickerIndex3" :data="pickerContent3" @change="pickChange3" :cascade="true">
+    <dong-picker :visible="showPicker3" v-on:hide="showPicker3 = false" :indexs="pickerIndex3" :data="pickerContent3" @change="pickChange3" :cascade="true">
       <template slot-scope="props">
         <span class="itemfz">{{props.item.name}}</span>
       </template>
-    </mfw-picker>
+    </dong-picker>
   </div>
 </template>
 <script>
-import mfwPicker from '../mfw-picker/Picker'
-import provinces from '../data/mfwpicker.js'
+import dongPicker from '../dong-picker/Picker'
+import provinces from '../data/dongpicker.js'
 export default {
   data() {
     return {
@@ -57,7 +57,7 @@ export default {
     }
   },
   components: {
-    mfwPicker
+    dongPicker
   },
   created() {
     // 第一个picker  data
